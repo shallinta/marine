@@ -1,0 +1,27 @@
+@color-tab-border: #24272c;
+
+.tabBar {
+	padding: 10px 0;
+	border-top: 1px solid @color-tab-border;
+	border-bottom: 1px solid @color-tab-border;
+	overflow: hidden;
+}
+
+.tabWraper {
+	width: 281px;
+	display: flex;
+	.tab {
+		flex: 1;
+		height: 20px;
+		border-right: 1px solid @color-tab-border;
+		text-align: center;
+		a {
+			color: #fff;
+		}
+		&.active a {
+			color: #74ccfa;
+		}
+	}
+}
+
+

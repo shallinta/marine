@@ -1,5 +1,10 @@
 @import '../../../node_modules/normalize.css/normalize.css';
 
+html, body {
+  height: 100%;
+  font-size: 14px;
+}
+
 a {
   color: #000;
   text-decoration: none;
@@ -15,6 +20,10 @@ ul.inline {
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .hide {
   display: none!important;
 }
@@ -22,4 +31,8 @@ ul.inline {
 @font-face {
 	font-family: qunarpad;
 	src: url(/fonts/qunarpad.ttf);
+}
+
+#app {
+  height: 100%;
 }

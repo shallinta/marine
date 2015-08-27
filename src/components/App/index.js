@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import IndexPage from '../IndexPage';
+import Index from '../Index';
 import LoginPage from '../LoginPage';
 import UsercenterPage from '../UsercenterPage';
 import router from '../../router-component';
@@ -47,6 +48,11 @@ class App {
         this.component = <IndexPage />;
         break;
 
+      case '/index':
+        this.setTitle(Index.statics().title);
+        this.component = <Index />;
+        break;
+
       case '/login':
         this.setTitle(LoginPage.statics().title);
         this.component = <LoginPage />;
@@ -61,8 +67,10 @@ class App {
         console.error('[Router error]' + this.props.path);
     }
 
+    let className = this.component.type.name.toLowerCase() + '-super';
+
     return (
-      <div>
+      <div className={className}>
         {this.component}
       </div>
     );

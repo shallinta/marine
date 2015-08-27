@@ -85,8 +85,8 @@ class IndexPage {
     }
 
     return (
-      <div className="index-page">
-        <div className="main">{groups}</div>
+      <div class="index-page">
+        <div class="main">{groups}</div>
         <Menu selected="0"/>
       </div>
     );

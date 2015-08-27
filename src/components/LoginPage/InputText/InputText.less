@@ -1,0 +1,37 @@
+@colorShadow: #9cf;
+@colorBorderLight: #74ccfa;
+@colorBorderDeep: #2095f0;
+
+.inputText {
+	display: inline-block;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 0;
+	box-shadow: 0 2px 8px @colorShadow;
+	.label {
+		display: inline-block;
+		height: 32px;
+		padding: 0 18px;
+		line-height: 32px;
+		background: @colorBorderDeep;
+		font-size: 14px;
+		color: #fff;
+	}
+	.comb {
+		width: 180px;
+		height: 32px;
+		margin-top: -10px;
+		padding: 0 10px;
+		line-height: 32px;
+		border: 2px solid @colorBorderLight;
+		border-left: none;
+		font-size: 14px;
+		outline: none;
+		&:hover, &:focus {
+			border: 2px solid @colorBorderDeep;
+			border-left: none;
+		}
+	}
+}
+

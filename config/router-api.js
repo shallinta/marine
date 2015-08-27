@@ -12,5 +12,6 @@ module.exports = {
 	// 特殊配置
 
 	// 通用配置
+	// '^/images/(.*)': 'require!/src/public/images/$1',
 	'^/api/(.*)': 'require!/app/data/api/$1.js',
 };

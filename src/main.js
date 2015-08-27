@@ -5,6 +5,7 @@ import App from './components/App';
 import Dispatcher from './dispatcher/Dispatcher';
 import { ActionTypes } from './constants/Constants';
 
+
 let path = decodeURI(window.location.pathname);
 let props = {
   path: path
